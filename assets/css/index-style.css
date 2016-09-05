@@ -1,0 +1,46 @@
+body {
+    background-color: #d5b39c
+}
+
+input {
+    width: 240px;
+    height: 30px;
+    font-size: 20px;
+}
+
+textarea {
+    width: 300px;
+    height: 200px;
+    font-size: 16px;
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 50px;
+    border: 3px solid #bf8d6b;
+    background-color: #cca488;
+    border-radius: 20px;
+}
+
+button:hover {
+    border: 3px solid #cca488;
+    background-color: #bf8d6b;
+}
+
+div {
+    display: inline-block;
+    max-width: 600px;
+}
+
+#submit_form {
+    float: left;
+    margin-right: 40px;
+}
+
+.message_post {
+    display: block;
+    border-bottom: 5px solid #bf8d6b;
+}

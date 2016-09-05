@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Spletna klepetalnica{% endblock title %}
+
+{% block body %}
+    <div id="submit_form">
+        <form action="/" method="post">
+            <input name="name" value="Anonimnež" placeholder="Vzdevek:" maxlength="23" required>
+            <br><br>
+            <textarea name="message" placeholder="Sporočilo:" maxlength="300" required></textarea>
+            <br>
+            <button type="submit">OBJAVI --></button>
+        </form>
+    </div>
+    <div>
+        {% for post in message_list %}
+            <div class="message_post">
+                <p>Oseba {{ post.name }} je na {{ post.time }} napisala:</p>
+                <p>{{ post.message }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock body %}
